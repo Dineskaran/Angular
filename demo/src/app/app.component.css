@@ -1,0 +1,83 @@
+.app__container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* height: 100vh; */
+    justify-content: center;
+    /* padding: auto; */
+
+}
+ 
+.app__wrapper {
+     display: flex; 
+     padding: 50px 100px ;
+     text-align: center;
+     flex-direction: column;
+     align-items:right;  
+     background-color: rgba(255, 255, 255, 0.5);
+     border-radius: 20px;
+} 
+
+.app__title h1 {
+    
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-size:xx-large; 
+}
+
+
+.app__add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+} 
+.app__input  {
+    /* margin-top: 20px; */
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 70vw;
+    border: none;
+    border-radius: 10px;
+    text-align: center; 
+    text-align: justify;
+}
+
+  .app__add__button__container {
+    width:25px;
+    display: flex;
+    padding-left:15px ;
+}
+.app__add__button {
+    padding: 10px 20px;
+    margin-left: 15px;
+    border: none;
+    width: 70vw;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    margin-top: 5px;
+
+/*    
+    display: flex;  */
+}
+
+.app__add__button:hover {
+    background-color: #d07474;
+    backface-visibility: visible;
+    color: black;
+  }
+  
+ 
+
+
+.app__data {
+    /* width: 100%; */
+    padding-top: 24px;
+    margin-top: 10px; 
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; 
+    /* position: relative;  */
+}

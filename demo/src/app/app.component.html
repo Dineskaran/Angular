@@ -1,0 +1,31 @@
+
+<div class="app__container">
+  <div class="app__wrapper">
+    <div class="app__title">
+      <div><h1>TO-Do List App</h1>  </div>
+    </div>
+
+    <div class="app__add">
+      <div class="app__input__container">
+        <input id="inputData" class="app__input" type="text">
+      </div>
+      
+       <div class="app__add__button__container">
+        <!-- <app-button buttonName="Add"></app-button> -->
+        <button class="app__add__button" bg_color="greean"(click)="this.todoService.addTodo()">Add</button>
+      </div> 
+     
+    </div> 
+    
+    <div class="app__data" *ngFor="let todo of this.todoService.todos">
+      <app-card [todoName]="todo.todoName" [id]="todo.id"/>
+      
+      
+   <!-- <app-card todoName ="meeting 1" ></app-card>  
+   <app-card todoName ="meeting 2" >  </app-card>
+   <app-card todoName ="meeting 2" >  </app-card>   -->
+      
+    </div>
+  </div>
+
+</div>
